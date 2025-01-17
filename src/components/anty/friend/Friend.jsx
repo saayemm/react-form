@@ -1,8 +1,14 @@
+import { useContext } from "react"
+import { AssetContext } from "../../grandpa/Grandpa"
 
 
 const Friend = () => {
+    const gift = useContext(AssetContext)
   return (
-    <div>Friend</div>
+    <div>
+        <h2>Friend</h2>
+        <p>{gift}</p>
+    </div>
   )
 }
 
